@@ -1,0 +1,87 @@
+
+:root{
+	--primary : #36808F;
+	--primary-light;
+	--primary-lighter;
+	--primary-dark;
+	--primary-darker;
+	--primary-text-dark: #111;
+	--primary-text-light: #fff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;900&family=Source+Sans+Pro:wght@200;300;400&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+
+html{
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	font-family: 'Montserrat', sans-serif;
+}
+h1{
+	font-size: 4rem;
+}
+
+h2{
+	font-size: 3rem;
+	font-weight: 700;
+}
+
+h3{
+	font-size: 1.7rem;
+	font-weight: 500;
+}
+
+h4{
+	font-size: 1.6rem;
+}
+
+.flex{
+	display: flex;
+}
+
+.flex-wrap{
+	flex-wrap: wrap;
+}
+.flex-direction-column{
+	flex-direction: column;
+}
+.justify-content-center{
+	justify-content: center;
+}
+.justify-content-space-between{
+	justify-content: space-between;
+}
+.align-items-center{
+	align-items: center;
+}
+.align-items-end{
+	align-items: flex-end;
+}
+
+button{
+	padding: 6px 12px;
+	border-radius: 6px;
+	border: 0px;
+	cursor: pointer;
+}
+
+.slick-prev::before, .slick-next::before {
+	color: var(--primary)
+}
+
+/*media (max-width: 767px) {
+	.slick-prev, .slick-next::before {
+		top: 0;
+	}
+}*/

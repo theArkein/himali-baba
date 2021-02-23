@@ -1,0 +1,291 @@
+:root{
+	--featured-banner-height-lg: 34rem;
+	--mini-banner-height-lg: 17rem;
+
+	--featured-banner-height-sm: 20rem;
+	--mini-banner-height-sm: 20rem;
+}
+
+/* Navbar*/
+nav .brand img{
+	height: 8rem;
+}
+
+
+/*COntent Wrapper*/
+
+@media (min-width: 768px) {
+	.page-content{
+		width: 90%;
+		margin: auto;
+	}
+}
+
+@media (max-width: 768px) {
+	.page-content{
+		width: 100%;
+		margin: auto 0.8rem;
+	}
+}
+
+
+/*============================================================*/
+/*============================================================*/
+/*==================Banner Styles Start=======================*/
+/*============================================================*/
+/*============================================================*/
+
+.banner-gallery{
+	width: 100%
+}
+.banner{
+	border-radius: 0.8rem;
+	margin: 0.8rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+}
+.featured.banner{
+	background-image: linear-gradient(to right, #36808F, #36808F);
+}
+
+.left .mini.banner:nth-of-type(1){
+	background-image: linear-gradient(to right, #D6212E, #D6212E, #E34B55, #E86C74)
+}
+.left .mini.banner:nth-of-type(2){
+	background-image: linear-gradient(to right, #7C8DEB, #7C8DEB, #A4AFF1, #B3BDF4)
+}
+.right .mini.banner:nth-of-type(1){
+	background-image: linear-gradient(to right, #6bb36b, #6bb36b, #99ff99, #ccffcc)
+}
+.right .mini.banner:nth-of-type(2){
+	background-image: linear-gradient(to right, #A77EE5, #A77EE5, #BC9CEB, #C1A4ED)
+}
+.right .mini.banner:nth-of-type(3){
+	background-image: linear-gradient(to right, #D3DC50, #D3DC50, #E6EB9C, #ECF0B3)
+}
+
+.banner .content{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-height: 95%;
+	min-height: 70%;
+	margin-bottom: 1.2rem;
+	padding: 1.2rem;
+}
+.banner img{
+	height: 85%;
+	width: 45%;
+	object-fit: contain;
+}
+.banner h3, .banner h2{
+	margin: 0.4rem 0;
+}
+.banner p{
+	text-align: justify;
+	margin-top: 0.4rem;
+	margin-bottom: 1.2rem;
+	font-size: 1.2rem;	
+	padding-right: 0.8rem;
+	width: 90%;
+}
+.banner .content button{
+	margin-top: auto;
+	margin-right: auto;
+	padding: 0.6rem 1.6rem;	
+}
+.featured.banner button {
+	color: #fff;
+	background-color: #ed1252;
+
+}
+/*large screens*/
+@media (min-width: 768px) {
+	.banner-gallery{
+		display: flex;
+	}
+	.banner-gallery .left{
+		width: 70%;
+	}
+	.banner-gallery .right{
+		width: 30%;
+	}
+	.banner-gallery .featured-mini{
+		display: flex;
+	}
+	.featured-mini .banner{
+		width: 50%
+	}
+	.featured.banner{
+		height: var(--featured-banner-height-lg);
+	}
+	.mini.banner{
+		height: var(--mini-banner-height-lg);
+	}
+	.featured.banner h2{
+		margin: 1.6rem 0;
+	}
+	.featured.banner button{
+		margin-top: 3rem;
+	}
+	.featured.banner p{
+		font-size: 1.4rem;
+	}
+	.featured.banner button{
+		font-size: 1.6rem;
+		padding: 1.2rem 3rem;
+	}
+	.mini.banner button{
+		font-size: 0.9rem;
+	}
+}
+
+
+/*small screens*/
+@media (max-width: 767px) {
+	.banner-gallery .left{
+		width: 100%;
+	}
+	.banner-gallery .right{
+		width: 100%;
+	}
+	.featured.banner{
+		min-height: var(--featured-banner-height-sm);
+		max-height: 40rem;
+	}
+	.mini.banner{
+		height: var(--mini-banner-height-sm);
+	}
+}
+
+
+/*============================================================*/
+/*====================Banner Styles End=======================*/
+/*============================================================*/
+
+
+/*============================================================*/
+/*=================Product Comonent Style=====================*/
+/*============================================================*/
+
+.product{
+	width: 251px;
+	border: 1px solid #eee;
+	border-radius: 6px;
+	color: #444;
+	margin: 0.5rem 2rem;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	cursor: pointer;
+	box-shadow: 1px 1px 5px 2px #eaeaea;
+}
+.product img{
+	width: 250px;
+	height: 200px;
+	object-fit: cover;
+	border-bottom: none;
+	transform: scale(0.8);
+}
+
+
+.product .product-details{
+	padding: 1.6rem;
+	padding-bottom: 0.5rem;
+	background: #36808f1a;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	margin-top: auto;
+}
+.product .product-name{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.8rem;
+	/*font-weight: 600;*/
+}
+.product .product-description{
+	margin: 0.3rem 0;
+}
+.product .product-price{
+	font-size: 1.4rem;
+	font-weight: bold;
+	margin: 1.2rem 0;
+}
+
+.product .add-to-wishlist {
+	color: var(--primary);
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+
+.product .add-to-bag {
+	background-color: var(--primary);
+	color: #fff;
+	margin: 1.2rem 0;
+}
+
+.product button i{
+	font-size: 1rem;
+	margin-right: 1rem;
+}
+
+.discount{
+	position: absolute;
+	top:10px;
+	left: 0;
+}
+.product .badge{ 
+	position: absolute;
+    height: 0px; 
+    width: 80px; 
+    color: #fff; 
+    -webkit-transform: rotate(0deg) skew(0deg); 
+    border-left: 0px transparent; 
+    border-top: 18px solid var(--primary); 
+    border-bottom: 18px solid var(--primary); 
+    border-right: 9px solid transparent; 
+
+	/*position: absolute;*/
+	/*
+	top: 0.5rem;
+	left: 0;
+	background: var(--primary);
+	color: #fff;
+	padding: 0.4rem 0.8rem;
+	padding-right: 2rem;*/
+}
+.product .info{
+	position: absolute;
+	color: #fff;
+	z-index: +5;
+	width: 80px;
+	top: 3px;
+	left: 8px;
+}
+.product .discount .info span{
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+.product .discount .info span:nth-child(2){
+	font-size: 1.1rem;
+	text-decoration: line-through;
+}
+
+
+
+
+.css-shapes-preview{ 
+    position: relative; 
+    height: 80px; 
+    width: 0px; 
+    top: 11px; 
+    left: 1px; 
+    transform: rotate(-90deg) skew(0deg); 
+    -webkit-transform: rotate(0deg) skew(0deg); 
+    border-top: 0px transparent; 
+    border-left: 25px solid #428BCA; 
+    border-right: 25px solid #428BCA; 
+    border-bottom: 10px solid transparent; 
+}
