@@ -12,11 +12,11 @@ nav .brand img{
 }
 
 
-/*COntent Wrapper*/
+/*Content Wrapper*/
 
 @media (min-width: 768px) {
 	.page-content{
-		width: 90%;
+		width: 95%;
 		margin: auto;
 	}
 }
@@ -28,12 +28,149 @@ nav .brand img{
 	}
 }
 
+/*====================== Navabr Styles ========================*/
 
-/*============================================================*/
-/*============================================================*/
+	.user .details {
+		margin: auto 1.2rem;
+	}
+	.user .details .image{
+		width: 40px;
+		height: 40px;
+		background-color: #eee;
+		color: var(--primary);
+		border-radius: 50%;
+		font-size: 2rem;
+		margin: auto 1rem;
+	}
+
+	.auth-action a{
+		background-color: var(--secondary);
+		margin: 0.8rem;
+		text-decoration: none;
+		color: #fff;
+		font-size: 1.6rem;
+		padding: 0.6rem 0.8rem;
+		border-radius: 3px;
+	}
+
+	@media (min-width: 768px){
+		nav{	
+			width: 98%;
+			margin: auto;
+		}
+		.header{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.navbar{
+			display: flex;
+			width: 70%;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.user{
+			display: flex;
+			margin: auto 1.2rem;
+		}
+		.user .details{
+			position: relative;
+			cursor: pointer;
+		}
+		.user .user-menu{
+			position: absolute;
+			background-color: #efefef;
+			padding: 10px;
+			width: 90px;
+			top: 30px;
+			right: 0px;
+			text-align: center;
+			color: #333;
+			display: none;
+		}
+		.user-menu li{
+			list-style: none;
+		}
+		.user .details:hover .user-menu{
+			display: block;
+		}
+		.user-menu a{
+			text-decoration: none;
+			font-size: 1.5rem;
+		}
+		.user .username{
+			font-size: 1.6rem;
+		}
+		.user .saved-products ion-icon{
+			font-size: 2.1rem;
+			color: var(--primary);
+			cursor: pointer;
+		}
+		.user .saved-products span.wishlist, .user .saved-products span.cart{
+			position: relative;
+			margin-right: 2.6rem;
+		}
+		.user .saved-products span .count{
+			position: absolute;
+			font-size: 01rem;
+			top: -14px;
+			left: 20px;
+			background: var(--secondary);
+			color: #fff;
+			padding: 4px;
+			border-radius: 50%;
+			cursor: pointer;
+		}
+		.searchbar input{
+			border: 1px solid #ccc;
+			text-align: center;
+			margin-right: 40px;
+			width: 450px;
+			padding: 10px;
+			font-size: 1.4rem;
+			letter-spacing: 1px;
+			outline: none;
+			border-radius: 16px;
+			box-shadow: ;
+			box-shadow: 0 4px 4px 0 #00000045;
+		}
+		.menu{
+			display: flex;
+			justify-content: space-between;
+			font-size: 1.6rem;
+			margin: 2rem auto;
+			width: 95%;
+		}
+		.menu a{
+			text-decoration: none;
+			color: #333;
+			padding-right: 1.2rem;
+		}
+		.menu .left a{
+			font-size: 1.3em;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+
+	@media (max-width: 767px) {
+		nav{
+			width: 100%;
+			margin: auto 0.8rem;
+		}
+		nav .brand .hamburger ion-icon{
+			font-size: 3rem;
+			margin-right: 2rem;
+			color: var(--primary);
+			cursor: pointer;
+		}
+	}
+
+/*=====================Navbar Styles End ======================*/
+
+
 /*==================Banner Styles Start=======================*/
-/*============================================================*/
-/*============================================================*/
 
 .banner-gallery{
 	width: 100%
@@ -167,6 +304,33 @@ nav .brand img{
 /*============================================================*/
 
 
+/*====================== Slider Section =======================*/
+
+
+@media (min-width: 768px) {
+	.slider {
+		margin: 60px auto;
+	}	
+}
+
+@media (max-width: 767px) {
+	.slider {
+		margin: 30px auto;
+	}	
+}
+
+
+
+
+
+
+
+
+
+
+/*====================== Slider Section End ==================*/
+
+
 /*============================================================*/
 /*=================Product Comonent Style=====================*/
 /*============================================================*/
@@ -176,24 +340,25 @@ nav .brand img{
 	border: 1px solid #eee;
 	border-radius: 6px;
 	color: #444;
-	margin: 0.5rem 2rem;
+	margin: 0.5rem 2.5rem;
 	display: flex;
 	flex-direction: column;
 	position: relative;
 	cursor: pointer;
-	box-shadow: 1px 1px 5px 2px #eaeaea;
+	box-shadow: 3px 3px 5px 2px #ccc;
 }
 .product img{
 	width: 250px;
 	height: 200px;
+	margin: auto;
 	object-fit: cover;
 	border-bottom: none;
-	transform: scale(0.8);
+	transform: scale(0.6);
 }
 
 
 .product .product-details{
-	padding: 1.6rem;
+	padding: 1rem;
 	padding-bottom: 0.5rem;
 	background: #36808f1a;
 	border-bottom-left-radius: 6px;
@@ -215,9 +380,17 @@ nav .brand img{
 }
 
 .product .add-to-wishlist {
-	color: var(--primary);
-	font-size: 1.8rem;
+	background-color: var(--secondary);
+	font-size: 1.3rem;
 	font-weight: bold;
+	margin-left: 8px;
+	padding: 5px;
+	text-align: center;
+	line-height: 1.3rem;
+	top: 10px;
+	right: 10px;
+	color: #fff;
+	border-radius: 50%;
 }
 
 .product .add-to-bag {
@@ -246,15 +419,6 @@ nav .brand img{
     border-top: 18px solid var(--primary); 
     border-bottom: 18px solid var(--primary); 
     border-right: 9px solid transparent; 
-
-	/*position: absolute;*/
-	/*
-	top: 0.5rem;
-	left: 0;
-	background: var(--primary);
-	color: #fff;
-	padding: 0.4rem 0.8rem;
-	padding-right: 2rem;*/
 }
 .product .info{
 	position: absolute;
@@ -273,9 +437,6 @@ nav .brand img{
 	text-decoration: line-through;
 }
 
-
-
-
 .css-shapes-preview{ 
     position: relative; 
     height: 80px; 
@@ -289,3 +450,7 @@ nav .brand img{
     border-right: 25px solid #428BCA; 
     border-bottom: 10px solid transparent; 
 }
+
+/*============================================================*/
+/*============== Product Comonent Style End ==================*/
+/*============================================================*/

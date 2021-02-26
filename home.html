@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Himali Baba</title>
+	
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 	<link rel="stylesheet" href="css/root.styles.css">
@@ -11,197 +12,258 @@
 </head>
 <body>
 
-	<div class="page-wrapper">
-		<nav>
-			<div class="brand">
+<div class="page-wrapper">
+	<nav>
+		<div class="header">
+			<div class="brand flex align-items-center justify-content-space-between">
 				<img src="images/brand/logo.png" alt="brand logo">
+				<div class="hamburger hide-lg"><ion-icon name="menu-outline"></ion-icon></div>
 			</div>
-		</nav>
-
-		<div class="page-content">
-			
-			<section>
-				<div class="banner-gallery">
-					<div class="left">
-						<div class="featured banner">
-							<div class="content">
-								<h2 class="title">Reach More Customers</h2>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod recusandae, aliquam, nam earum neque aut? Itaque, autem atque om</p>
-								<button class="btn">Sell With Us</button>
-							</div>
-							<img src="images/banner/featured.png" alt="">
-						</div>
-						<div class="featured-mini">
-							<div class="mini banner">
-								<div class="content">
-									<h3 class="title">Womens Fashion</h3>
-									<p>Lorem ipsum dolor sit, amet consectetur adipisici</p>
-									<button class="btn">Buy Now</button>
-								</div>
-								<img src="images/banner/mini-banner-a.png" alt="">
-							</div>
-							<div class="mini banner">
-								<div class="content">
-									<h3 class="title">Mens Fashion</h3>
-									<p>earum neque aut? Itaque, autem atque om</p>
-									<button class="btn">Buy Now</button>
-								</div>
-								<img src="images/banner/mini-banner-b.png" alt="">
-							</div>
+			<div class="navbar">
+				<div class="searchbar">
+					<input type="text" placeholder="search your product">
+				</div>
+				<div class="user">
+					<div class="saved-products flex align-items-center">
+						<span class="wishlist">
+							<ion-icon name="heart-outline"></ion-icon> <span class="count">04</span>
+						</span>
+						<span class="cart">
+							<ion-icon name="bag-handle-outline"></ion-icon><span class="count">09</span>
+						</span>
+					</div>
+					<div class="details flex align-items-center">
+						<div class="image flex justify-content-center align-items-center"> D </div>
+						<div class="username">John Doe <ion-icon name="chevron-down-outline"></ion-icon></div>
+						<div class="user-menu">
+							<li><a href="">Profile</a></li>
+							<li><a href="">Logout</a></li>
 						</div>
 					</div>
-					<div class="right">
-						<div class="mini banner">
-							<div class="content">
-								<h3 class="title">25% Off on Kitchen Appliances</h3>
-								<p>earum neque aut? Itaque, autem atque om</p>
-								<button class="btn">Buy Now</button>
-							</div>
-							<img src="images/banner/mini-banner-c.png" alt="">
-						</div>
-						<div class="mini banner">
-							<div class="content">
-									<h3 class="title">Mens Fashion</h3>
-									<p>earum neque aut? Itaque, autem atque om</p>
-									<button class="btn">Buy Now</button>
-								</div>
-								<img src="images/banner/mini-banner-b.png" alt="">
-						</div>
-						<div class="mini banner">
-							<div class="content">
-								<h3 class="title">Big Save Deal</h3>
-								<p>earum neque aut? Itaque, autem atque om</p>
-								<button class="btn">Buy Now</button>
-							</div>
-							<img src="images/banner/mini-banner-a.png" alt="">
-						</div>
+					<div class="auth-action flex align-items-center hide-lg">
+						<a href="">Signin</a>
+						<a href="">Signup</a>
 					</div>
 				</div>
-			</section>
-
-			<div class="products flex flex-wrap justify-content-center">
-				
-			<div class="product">
-				<img src="images/product/shoe.png" alt="product image">
-				<div class="product-details">
-					<div class="flex align-items-center justify-content-space-between">
-						<div>
-							<div class="product-name">IWC Schaffhaussen</div>
-							<div class="product-description">Automatic | Mens wrist watch</div>
-						</div>
-						<i class="fa fa-heart-o add-to-wishlist"></i>
-					</div>
-					<div class="flex justify-content-space-between align-items-center">				
-						<div class="product-price">Rs. 17000</div>
-						<button class="add-to-bag"><i class="fa fa-shopping-bag"></i>Add to cart</button>
-					</div>
-					
-					<div class="discount">
-						<div class="badge"></div>
-						<div class="info flex flex-direction-column"><span>25% off</span><span>Rs 20000</span></div>
-					</div>
-				</div>		
-			</div>
-
-			<div class="product">
-				<img src="images/product/watch-2.png" alt="product image">
-				<div class="product-details">
-					<div class="flex align-items-center justify-content-space-between">
-						<div>
-							<div class="product-name">IWC Schaffhaussen</div>
-							<div class="product-description">Automatic | Mens wrist watch</div>
-						</div>
-						<i class="fa fa-heart-o add-to-wishlist"></i>
-					</div>
-					<div class="flex justify-content-space-between align-items-center">				
-						<div class="product-price">Rs. 17000</div>
-						<button class="add-to-bag"><i class="fa fa-shopping-bag"></i>Add to cart</button>
-					</div>
-
-					<div class="discount">
-						<div class="badge"></div>
-						<div class="info flex flex-direction-column"><span>25% off</span><span>Rs 20000</span></div>
-					</div>
-				</div>		
-			</div>
-			<div class="product">
-				<img src="images/product/watch.png" alt="product image">
-				<div class="product-details">
-					<div class="flex align-items-center justify-content-space-between">
-						<div>
-							<div class="product-name">IWC Schaffhaussen</div>
-							<div class="product-description">Automatic | Mens wrist watch</div>
-						</div>
-						<i class="fa fa-heart-o add-to-wishlist"></i>
-					</div>
-					<div class="flex justify-content-space-between align-items-center">				
-						<div class="product-price">Rs. 17000</div>
-						<button class="add-to-bag"><i class="fa fa-shopping-bag"></i>Add to cart</button>
-					</div>
-
-					<div class="discount">
-						<div class="badge"></div>
-						<div class="info flex flex-direction-column"><span>25% off</span><span>Rs 20000</span></div>
-					</div>
-				</div>		
-			</div>
-			
-			<div class="product">
-				<img src="images/product/beauty-product.jpg" alt="product image">
-				<div class="product-details">
-					<div class="flex align-items-center justify-content-space-between">
-						<div>
-							<div class="product-name">IWC Schaffhaussen</div>
-							<div class="product-description">Automatic | Mens wrist watch</div>
-						</div>
-						<i class="fa fa-heart-o add-to-wishlist"></i>
-					</div>
-					<div class="flex justify-content-space-between align-items-center">				
-						<div class="product-price">Rs. 17000</div>
-						<button class="add-to-bag"><i class="fa fa-shopping-bag"></i>Add to cart</button>
-					</div>
-
-					<div class="discount">
-						<div class="badge"></div>
-						<div class="info flex flex-direction-column"><span>25% off</span><span>Rs 20000</span></div>
-					</div>
-				</div>		
-			</div>
-			<div class="product">
-				<img src="images/product/shoe.png" alt="product image">
-				<div class="product-details">
-					<div class="flex align-items-center justify-content-space-between">
-						<div>
-							<div class="product-name">IWC Schaffhaussen</div>
-							<div class="product-description">Automatic | Mens wrist watch</div>
-						</div>
-						<i class="fa fa-heart-o add-to-wishlist"></i>
-					</div>
-					<div class="flex justify-content-space-between align-items-center">				
-						<div class="product-price">Rs. 17000</div>
-						<button class="add-to-bag"><i class="fa fa-shopping-bag"></i>Add to cart</button>
-					</div>
-					<div class="discount">
-						<div class="badge"></div>
-						<div class="info flex flex-direction-column"><span>25% off</span><span>Rs 20000</span></div>
-					</div>
-				</div>		
 			</div>
 		</div>
-			</div>			
-		</div>			
-	</div>
+		<div class="menu">
+			<div class="left">
+				<a href="Categories"><span>All Categories</span> <ion-icon name="chevron-down-outline"></ion-icon> </a>
+			</div>
+			<div class="right">
+				<a href="">Deal of the day</a>
+				<a href="">Big Save</a>
+				<a href="">Best Seller</a>
+				<a href="">All Products</a>
+				<a href="">About Us</a>
+				<a href="">Contact</a>
+				<a href="">Sell On Himali Baba</a>
+			</div>
+		</div>
+	</nav>
+
+	<div class="page-content">
+		
+		<div class="banner-gallery">
+			<div class="left">
+				<div class="featured banner">
+					<div class="content">
+						<h2 class="title">Reach More Customers</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod recusandae, aliquam, nam earum neque aut? Itaque, autem atque om</p>
+						<button class="btn">Sell With Us</button>
+					</div>
+					<img src="images/banner/featured.png" alt="">
+				</div>
+				<div class="featured-mini">
+					<div class="mini banner">
+						<div class="content">
+							<h3 class="title">Womens Fashion</h3>
+							<p>Lorem ipsum dolor sit, amet consectetur adipisici</p>
+							<button class="btn">Buy Now</button>
+						</div>
+						<img src="images/banner/mini-banner-a.png" alt="">
+					</div>
+					<div class="mini banner">
+						<div class="content">
+							<h3 class="title">Mens Fashion</h3>
+							<p>earum neque aut? Itaque, autem atque om</p>
+							<button class="btn">Buy Now</button>
+						</div>
+						<img src="images/banner/mini-banner-b.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<div class="mini banner">
+					<div class="content">
+						<h3 class="title">25% Off on Kitchen Appliances</h3>
+						<p>earum neque aut? Itaque, autem atque om</p>
+						<button class="btn">Buy Now</button>
+					</div>
+					<img src="images/banner/mini-banner-c.png" alt="">
+				</div>
+				<div class="mini banner">
+					<div class="content">
+							<h3 class="title">Mens Fashion</h3>
+							<p>earum neque aut? Itaque, autem atque om</p>
+							<button class="btn">Buy Now</button>
+						</div>
+						<img src="images/banner/mini-banner-b.png" alt="">
+				</div>
+				<div class="mini banner">
+					<div class="content">
+						<h3 class="title">Big Save Deal</h3>
+						<p>earum neque aut? Itaque, autem atque om</p>
+						<button class="btn">Buy Now</button>
+					</div>
+					<img src="images/banner/mini-banner-a.png" alt="">
+				</div>
+			</div>
+		</div>
+	
+		<div class="featured slider">
+			<h3>Featured Products</h3>
+			<div class="slider-wrapper">
+				<div class="product">
+					<img src="images/product/shoe.png" alt="product image">
+					<div class="product-details">
+						<div class="flex align-items-center justify-content-space-between">
+							<div>
+								<div class="product-name">IWC Schaffhaussen</div>
+								<div class="product-description">Automatic | Mens wrist watch</div>
+							</div>
+							<i class="fa fa-heart-o add-to-wishlist"></i>
+						</div>
+						<div class="flex justify-content-space-between align-items-center">				
+							<div class="product-price">Rs. 17000</div>
+							<button class="add-to-bag"><i class="fa fa-shopping-bag"></i>Add to cart</button>
+						</div>
+						
+						<div class="discount">
+							<div class="badge"></div>
+							<div class="info flex flex-direction-column"><span>25% off</span><span>Rs 20000</span></div>
+						</div>
+					</div>		
+				</div>
+
+				<div class="product">
+					<img src="images/product/watch-2.png" alt="product image">
+					<div class="product-details">
+						<div class="flex align-items-center justify-content-space-between">
+							<div>
+								<div class="product-name">IWC Schaffhaussen</div>
+								<div class="product-description">Automatic | Mens wrist watch</div>
+							</div>
+							<i class="fa fa-heart-o add-to-wishlist"></i>
+						</div>
+						<div class="flex justify-content-space-between align-items-center">				
+							<div class="product-price">Rs. 17000</div>
+							<button class="add-to-bag"><i class="fa fa-shopping-bag"></i>Add to cart</button>
+						</div>
+
+						<div class="discount">
+							<div class="badge"></div>
+							<div class="info flex flex-direction-column"><span>25% off</span><span>Rs 20000</span></div>
+						</div>
+					</div>		
+				</div>
+				<div class="product">
+					<img src="images/product/watch.png" alt="product image">
+					<div class="product-details">
+						<div class="flex align-items-center justify-content-space-between">
+							<div>
+								<div class="product-name">IWC Schaffhaussen</div>
+								<div class="product-description">Automatic | Mens wrist watch</div>
+							</div>
+							<i class="fa fa-heart-o add-to-wishlist"></i>
+						</div>
+						<div class="flex justify-content-space-between align-items-center">				
+							<div class="product-price">Rs. 17000</div>
+							<button class="add-to-bag"><i class="fa fa-shopping-bag"></i>Add to cart</button>
+						</div>
+
+						<div class="discount">
+							<div class="badge"></div>
+							<div class="info flex flex-direction-column"><span>25% off</span><span>Rs 20000</span></div>
+						</div>
+					</div>		
+				</div>
+				
+				<div class="product">
+					<img src="images/product/beauty-product.jpg" alt="product image">
+					<div class="product-details">
+						<div class="flex align-items-center justify-content-space-between">
+							<div>
+								<div class="product-name">IWC Schaffhaussen</div>
+								<div class="product-description">Automatic | Mens wrist watch</div>
+							</div>
+							<i class="fa fa-heart-o add-to-wishlist"></i>
+						</div>
+						<div class="flex justify-content-space-between align-items-center">				
+							<div class="product-price">Rs. 17000</div>
+							<button class="add-to-bag"><i class="fa fa-shopping-bag"></i>Add to cart</button>
+						</div>
+
+						<div class="discount">
+							<div class="badge"></div>
+							<div class="info flex flex-direction-column"><span>25% off</span><span>Rs 20000</span></div>
+						</div>
+					</div>		
+				</div>
+				<div class="product">
+					<img src="images/product/shoe.png" alt="product image">
+					<div class="product-details">
+						<div class="flex align-items-center justify-content-space-between">
+							<div>
+								<div class="product-name">IWC Schaffhaussen</div>
+								<div class="product-description">Automatic | Mens wrist watch</div>
+							</div>
+							<i class="fa fa-heart-o add-to-wishlist"></i>
+						</div>
+						<div class="flex justify-content-space-between align-items-center">				
+							<div class="product-price">Rs. 17000</div>
+							<button class="add-to-bag"><i class="fa fa-shopping-bag"></i>Add to cart</button>
+						</div>
+						<div class="discount">
+							<div class="badge"></div>
+							<div class="info flex flex-direction-column"><span>25% off</span><span>Rs 20000</span></div>
+						</div>
+					</div>		
+				</div>
+			</div>
+		</div>
+
+	</div>			
+</div>
 
 <script src="https://kit.fontawesome.com/b5b791cd78.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script>
 	
 	$(document).ready(function(){
-		$('.products').slick({
+		$('.slider-wrapper').slick({
 		  infinite: true,
 		  slidesToShow: 1,
-		  variableWidth: true
+		  variableWidth: true,
+		  responsive: [
+			{
+		      breakpoint: 768,
+		      settings: {
+		        arrows: false,
+		        slidesToShow: 2
+		      }
+		    },
+		    {
+		      breakpoint: 480,
+		      settings: {
+		      	arrows: false,
+		        slidesToShow: 1
+		      }
+		    }
+		  ]
 		});
 	});
 		

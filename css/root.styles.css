@@ -7,6 +7,8 @@
 	--primary-darker;
 	--primary-text-dark: #111;
 	--primary-text-light: #fff;
+
+	--secondary: #ed1252;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700;900&family=Source+Sans+Pro:wght@200;300;400&display=swap');
@@ -18,6 +20,7 @@
 html{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 10px;
+	letter-spacing: 1px;
 }
 
 h1,
@@ -28,24 +31,25 @@ h5,
 h6{
 	font-family: 'Montserrat', sans-serif;
 }
+
 h1{
-	font-size: 4rem;
+	font-size: 3.6rem
 }
-
 h2{
-	font-size: 3rem;
-	font-weight: 700;
+	font-size: 2.8rem
 }
-
 h3{
-	font-size: 1.7rem;
-	font-weight: 500;
+	font-size: 1.8rem
 }
-
 h4{
-	font-size: 1.6rem;
+	font-size: 1.5rem
 }
-
+h5{
+	font-size: 1.2rem
+}
+h6{
+	font-size: 1rem
+}
 .flex{
 	display: flex;
 }
@@ -80,8 +84,20 @@ button{
 	color: var(--primary)
 }
 
-/*media (max-width: 767px) {
-	.slick-prev, .slick-next::before {
-		top: 0;
+@media (min-width: 768px) {
+	.hide-lg{
+		display: none;
 	}
-}*/
+	/*.show-lg{
+		display: block;
+	}*/
+}
+
+@media (max-width: 768px) {
+	.hide-sm {
+		display: none;
+	}
+	/*.show-sm {
+
+	}*/
+}
