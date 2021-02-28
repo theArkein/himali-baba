@@ -21,6 +21,10 @@ html{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 10px;
 	letter-spacing: 1px;
+	padding: 0px;
+}
+body{
+	margin: 0px;
 }
 
 h1,

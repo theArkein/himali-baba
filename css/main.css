@@ -29,6 +29,13 @@ nav .brand img{
 }
 
 /*====================== Navabr Styles ========================*/
+	nav {
+		position: fixed;
+		top: 0px;
+		width: 100%;
+		background-color: #fff;
+		z-index: +10;
+	}
 
 	.user .details {
 		margin: auto 1.2rem;
@@ -170,6 +177,33 @@ nav .brand img{
 /*=====================Navbar Styles End ======================*/
 
 
+/*=========================Page Content Start ======================*/
+
+@media (min-width: 768px){
+	.page-content{
+		margin-top: 140px;
+	}
+}
+
+/*======================== Page Content End ========================*/
+
+
+/*========================= Product Gallery Start ==================*/
+	.products-gallery .gallery-wrapper{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.products-gallery .gallery-wrapper .product{
+		margin-bottom: 50px;
+		margin-right: 50px;
+	}
+
+
+/*======================== Product Gallery End =====================*/
+
+
 /*==================Banner Styles Start=======================*/
 
 .banner-gallery{
@@ -298,13 +332,13 @@ nav .brand img{
 	}
 }
 
-
-/*============================================================*/
 /*====================Banner Styles End=======================*/
-/*============================================================*/
 
 
 /*====================== Slider Section =======================*/
+.slider .product{
+	margin-right: 50px;
+}
 
 
 @media (min-width: 768px) {
@@ -319,28 +353,19 @@ nav .brand img{
 	}	
 }
 
-
-
-
-
-
-
-
-
-
 /*====================== Slider Section End ==================*/
 
 
-/*============================================================*/
+
+
+
 /*=================Product Comonent Style=====================*/
-/*============================================================*/
 
 .product{
 	width: 251px;
 	border: 1px solid #eee;
 	border-radius: 6px;
 	color: #444;
-	margin: 0.5rem 2.5rem;
 	display: flex;
 	flex-direction: column;
 	position: relative;
@@ -451,6 +476,62 @@ nav .brand img{
     border-bottom: 10px solid transparent; 
 }
 
-/*============================================================*/
 /*============== Product Comonent Style End ==================*/
-/*============================================================*/
+
+
+/*====================== Footer Start ========================*/
+footer{
+	background-color: var(--primary);
+	width: 100%;
+	padding:20px;
+	color: #fff;
+	font-size: 1.6rem;
+}
+footer .footer-links{
+	margin: 0px 30px;
+}
+footer a{
+	color: #fff;
+	text-decoration: none;
+}
+footer h3{
+	color: #f799b5;
+}
+footer ul{
+	padding-left: 20px;
+}
+footer li{
+	padding: 8px 0;
+}
+footer .middle{
+	margin: 20px 80px;
+	font-size: 1.3rem;
+	line-height: 20px;
+}
+footer .middle img{
+	height: 45px;
+	width: 45px;
+	margin-right: 16px;
+}
+footer .middle b{
+	font-size: 1.2em;
+}
+footer .pro-item{
+	width: 250px;
+	margin: 20px 0;
+}
+footer .bottom{
+	margin: 0px 80px;
+	color: #ccc;
+}
+@media (min-width: 768px){
+	footer{
+		background-color: var(--primary);
+		width: 100%;
+		padding:50px 20px;
+		color: #fff;
+		min-height: 75vh;	
+		z-index: 10;
+	}
+}
+/*====================== Footer End ==========================*/
