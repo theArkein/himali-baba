@@ -206,6 +206,9 @@
 	min-height: 200px;
 	max-height: 400px;
 	font-size: 16px;
+	color: #555;
+	letter-spacing: 2px;
+	line-height: 24px;
 }
 .ui-tabs .ui-tabs-nav{
 	background-color: var(--primary);
