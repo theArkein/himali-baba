@@ -6,6 +6,7 @@
 	--mini-banner-height-sm: 20rem;
 }
 
+
 /* Navbar*/
 nav .brand img{
 	height: 8rem;
@@ -19,6 +20,9 @@ nav .brand img{
 		width: 95%;
 		margin: auto;
 	}
+	body{
+		margin: 0;
+	}
 }
 
 @media (max-width: 768px) {
@@ -26,6 +30,7 @@ nav .brand img{
 		width: 100%;
 		margin: auto 0.8rem;
 	}
+
 }
 
 /*====================== Navabr Styles ========================*/
@@ -62,7 +67,7 @@ nav .brand img{
 
 	@media (min-width: 768px){
 		nav{	
-			width: 98%;
+			width: 100%;
 			margin: auto;
 		}
 		.header{
@@ -164,13 +169,37 @@ nav .brand img{
 	@media (max-width: 767px) {
 		nav{
 			width: 100%;
-			margin: auto 0.8rem;
 		}
 		nav .brand .hamburger ion-icon{
 			font-size: 3rem;
 			margin-right: 2rem;
 			color: var(--primary);
 			cursor: pointer;
+		}
+		.mobile-menu {
+			width: 100%;
+			background-color: #fff;
+			max-height: 300px;
+			overflow-y: scroll;
+			display: none;
+		}
+		.mobile-menu input{
+			text-align: center;
+			padding: 8px;
+			border: 2px solid #222;
+			border-radius: 6px
+		}
+		.mobile-menu a{
+			font-size: 14px;
+			margin: 12px;
+			cursor: pointer;
+		}
+		.sublist {
+			height: 0;
+			overflow: hidden;
+		}
+		.list:hover>.sublist{
+			height: 100%;
 		}
 	}
 
@@ -179,9 +208,14 @@ nav .brand img{
 
 /*=========================Page Content Start ======================*/
 
-@media (min-width: 768px){
-	.page-content{
+@media (min-width: 767px){
+	.page-content {
 		margin-top: 140px;
+	}
+}
+@media (max-width: 768px){
+	.page-content {
+		margin-top: 100px;
 	}
 }
 
@@ -197,7 +231,17 @@ nav .brand img{
 
 	.products-gallery .gallery-wrapper .product{
 		margin-bottom: 50px;
-		margin-right: 50px;
+		margin-right: 30px;
+	}
+
+	.products-gallery .gallery-wrapper .product:nth-child(4n){
+		margin-right: 0px;
+	}
+
+	@media (max-width: 768px){
+		.products-gallery .gallery-wrapper{
+			justify-content: center;
+		}
 	}
 
 
@@ -360,6 +404,9 @@ nav .brand img{
 
 
 /*=================Product Comonent Style=====================*/
+a.product{
+	text-decoration: none;
+}
 
 .product{
 	width: 251px;
@@ -478,6 +525,36 @@ nav .brand img{
 
 /*============== Product Comonent Style End ==================*/
 
+/*======================= Pros Start =========================*/
+.pros{
+	font-size: 1.1rem;
+	line-height: 20px;
+	margin: 30px auto;
+	color: #333
+}
+.pros img{
+	height: 65px;
+	width: 65px;
+	margin-bottom: 16px;
+	background-color: var(--primary);
+	padding: 10px;
+	border-radius: 100%;
+}
+.pro-item{
+	width: 200px;
+	margin: 20px auto;
+	text-align: center;
+}
+.pro-item b{
+	font-size: 1.3rem;
+	color: #222
+}
+@media (max-width: 768px){
+	.pro-item{
+		width: 45%;
+	}
+}
+/*========================= Pros End ============================*/
 
 /*====================== Footer Start ========================*/
 footer{
@@ -485,53 +562,63 @@ footer{
 	width: 100%;
 	padding:20px;
 	color: #fff;
-	font-size: 1.6rem;
+	font-size: 1.3rem;
 }
 footer .footer-links{
-	margin: 0px 30px;
+	/*margin: 0px 30px;*/
 }
 footer a{
-	color: #fff;
+	color: #cfcfcf;
 	text-decoration: none;
 }
+footer a:hover{
+	color: #fff;
+}
 footer h3{
-	color: #f799b5;
+	color: #eee;
 }
 footer ul{
 	padding-left: 20px;
 }
 footer li{
-	padding: 8px 0;
+	padding: 4px 0;
 }
-footer .middle{
-	margin: 20px 80px;
-	font-size: 1.3rem;
-	line-height: 20px;
-}
-footer .middle img{
-	height: 45px;
-	width: 45px;
-	margin-right: 16px;
-}
-footer .middle b{
-	font-size: 1.2em;
-}
-footer .pro-item{
-	width: 250px;
-	margin: 20px 0;
-}
+
 footer .bottom{
-	margin: 0px 80px;
+	margin: 20px 30px;
+	padding: 20px;
 	color: #ccc;
+	border-top: 2px solid #61919b;
+}
+footer .payment-methods img{
+	height: 32px;
+	margin-bottom: 8px;
+}
+footer .payment-methods>div{
+	margin-right: 24px;
+}
+footer ion-icon{
+	font-size: 2.4rem;
+	margin-right: 20px;
 }
 @media (min-width: 768px){
 	footer{
 		background-color: var(--primary);
 		width: 100%;
-		padding:50px 20px;
 		color: #fff;
-		min-height: 75vh;	
 		z-index: 10;
 	}
+	footer .top{
+		width: 95%;
+		margin: auto;
+
+	}
 }
+
+@media (max-width: 768px){
+	footer{
+		padding: 20px;
+	}
+}
+
 /*====================== Footer End ==========================*/
