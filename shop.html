@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Himali Baba</title>
+	
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/root.styles.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/shop.css">
+
+</head>
+<body>
+
+<div class="page-wrapper">
+	
+	<nav>
+		<div class="header">
+			<div class="brand flex align-items-center justify-content-space-between">
+				<img src="images/brand/logo.png" alt="brand logo">
+				<div class="hamburger hide-lg"><ion-icon name="menu-outline"></ion-icon></div>
+			</div>
+			<div class="navbar hide-sm">
+				<div class="searchbar">
+					<input type="text" placeholder="search your product">
+				</div>
+				<div class="user hide-sm">
+					<div class="saved-products flex align-items-center">
+						<span class="wishlist">
+							<ion-icon name="heart-outline"></ion-icon> <span class="count">04</span>
+						</span>
+						<span class="cart">
+							<ion-icon name="bag-handle-outline"></ion-icon><span class="count">09</span>
+						</span>
+					</div>
+					<div class="details flex align-items-center">
+						<div class="image flex justify-content-center align-items-center"> D </div>
+						<div class="username">John Doe <ion-icon name="chevron-down-outline"></ion-icon></div>
+						<div class="user-menu">
+							<li><a href="">Profile</a></li>
+							<li><a href="">Logout</a></li>
+						</div>
+					</div>
+					<div class="auth-action flex align-items-center hide-lg hide-sm">
+						<a href="">Signin</a>
+						<a href="">Signup</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu hide-sm">
+			<div class="left">
+				<a id="category-btn"><span>All Categories</span> <ion-icon name="chevron-down-outline"></ion-icon> </a>
+				<div class="category-menu">
+					<div class="categories-gallery">
+						<a class="item">
+							<img src="images/categories/grocery.png" alt="">
+							<span>Kitchen & Groceries</span>
+						</a>
+						<a class="item">
+							<img src="images/categories/electronics.png" alt="">
+							<span>Electronics & Appliances</span>
+						</a>
+						<a class="item">
+							<img src="images/categories/fashion.png" alt="">
+							<span>Fashion & Beauty</span>
+						</a>
+						<a class="item">
+							<img src="images/categories/fashion.png" alt="">
+							<span>Fashion & Beauty</span>
+						</a>
+						<a class="item">
+							<img src="images/categories/grocery.png" alt="">
+							<span>Kitchen & Groceries</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="right hide-sm">
+				<a href="">Deal of the day</a>
+				<a href="">Big Save</a>
+				<a href="">Best Seller</a>
+				<a href="">All Products</a>
+				<a href="">About Us</a>
+				<a href="">Contact</a>
+				<a href="">Sell On Himali Baba</a>
+			</div>
+		</div>
+		<div class="mobile-menu hide-lg">
+			<div class="list flex flex-direction-column align-items-center">
+				<input type="text" placeholder="search product">	
+				<a>My Wishlist</a>
+				<a>My Cart</a>
+				<a>My Profile</a>
+				<a id="category-btn" class="mobile" onclick="$('category-menu.mobile').toggle()"><span>All Categories</span> <ion-icon name="chevron-down-outline"></ion-icon> </a>
+				<div class="mobile category-menu">
+					<div class="categories-gallery">
+						<a class="item">
+							<img src="images/categories/grocery.png" alt="">
+							<span>Kitchen & Groceries</span>
+						</a>
+						<a class="item">
+							<img src="images/categories/electronics.png" alt="">
+							<span>Electronics & Appliances</span>
+						</a>
+						<a class="item">
+							<img src="images/categories/fashion.png" alt="">
+							<span>Fashion & Beauty</span>
+						</a>
+						<a class="item">
+							<img src="images/categories/fashion.png" alt="">
+							<span>Fashion & Beauty</span>
+						</a>
+						<a class="item">
+							<img src="images/categories/grocery.png" alt="">
+							<span>Kitchen & Groceries</span>
+						</a>
+					</div>
+				</div>
+			
+			</div>
+		</div>
+	</nav>
+
+	<div class="page-content">
+		
+		<div class="pdpNav">
+			<a href="home.html">Home</a> / <a href="shop.html">Category</a> / <a href="shop.html">Sub Category</a>
+		</div>
+
+		<div class="filter">
+			<div>
+				<h1>Shop Page</h1>
+			</div>
+			<div class="sort-by">
+				<label for="filter-products">Sort By: </label>
+				<select id="filter-products">
+					<option value="latest">Latest Products</option>
+					<option value="oldest">Oldest Products</option>
+					<option value="lowest-price">Lowest Price</option>
+					<option value="highest-price">Lowest Price</option>
+					<option value="offer">Offer</option>
+					<option value="premium">Premium</option>
+					<option value="ratings">Approval Rating</option>
+
+				</select>
+			</div>
+		</div>
+
+		<div class="result-products">
+			
+			<a class="product" href="product.html">
+				<img src="images/product/watch-2.png" alt="product image">
+				<div class="product-details">
+					<div class="flex align-items-center justify-content-space-between">
+						<div>
+							<div class="product-name">IWC Schaffhaussen</div>
+							<div class="product-description">Automatic | Mens wrist watch</div>
+						</div>
+						<i class="fa fa-heart-o add-to-wishlist"></i>
+					</div>
+					<div class="flex justify-content-space-between align-items-center">				
+						<div class="product-price">Rs. 17000</div>
+						<button class="add-to-bag"><i class="fa fa-shopping-bag"></i>Add to cart</button>
+					</div>
+
+					<div class="discount">
+						<div class="badge"></div>
+						<div class="info flex flex-direction-column"><span>25% off</span><span>Rs 20000</span></div>
+					</div>
+				</div>		
+			</a>
+			<a class="product" href="product.html">
+				<img src="images/product/watch-2.png" alt="product image">
+				<div class="product-details">
+					<div class="flex align-items-center justify-content-space-between">
+						<div>
+							<div class="product-name">IWC Schaffhaussen</div>
+							<div class="product-description">Automatic | Mens wrist watch</div>
+						</div>
+						<i class="fa fa-heart-o add-to-wishlist"></i>
+					</div>
+					<div class="flex justify-content-space-between align-items-center">				
+						<div class="product-price">Rs. 17000</div>
+						<button class="add-to-bag"><i class="fa fa-shopping-bag"></i>Add to cart</button>
+					</div>
+
+					<div class="discount">
+						<div class="badge"></div>
+						<div class="info flex flex-direction-column"><span>25% off</span><span>Rs 20000</span></div>
+					</div>
+				</div>		
+			</a>
+			<a class="product" href="product.html">
+				<img src="images/product/watch-2.png" alt="product image">
+				<div class="product-details">
+					<div class="flex align-items-center justify-content-space-between">
+						<div>
+							<div class="product-name">IWC Schaffhaussen</div>
+							<div class="product-description">Automatic | Mens wrist watch</div>
+						</div>
+						<i class="fa fa-heart-o add-to-wishlist"></i>
+					</div>
+					<div class="flex justify-content-space-between align-items-center">				
+						<div class="product-price">Rs. 17000</div>
+						<button class="add-to-bag"><i class="fa fa-shopping-bag"></i>Add to cart</button>
+					</div>
+
+					<div class="discount">
+						<div class="badge"></div>
+						<div class="info flex flex-direction-column"><span>25% off</span><span>Rs 20000</span></div>
+					</div>
+				</div>		
+			</a>
+			<a class="product" href="product.html">
+				<img src="images/product/watch-2.png" alt="product image">
+				<div class="product-details">
+					<div class="flex align-items-center justify-content-space-between">
+						<div>
+							<div class="product-name">IWC Schaffhaussen</div>
+							<div class="product-description">Automatic | Mens wrist watch</div>
+						</div>
+						<i class="fa fa-heart-o add-to-wishlist"></i>
+					</div>
+					<div class="flex justify-content-space-between align-items-center">				
+						<div class="product-price">Rs. 17000</div>
+						<button class="add-to-bag"><i class="fa fa-shopping-bag"></i>Add to cart</button>
+					</div>
+
+					<div class="discount">
+						<div class="badge"></div>
+						<div class="info flex flex-direction-column"><span>25% off</span><span>Rs 20000</span></div>
+					</div>
+				</div>		
+			</a>
+			<a class="product" href="product.html">
+				<img src="images/product/watch-2.png" alt="product image">
+				<div class="product-details">
+					<div class="flex align-items-center justify-content-space-between">
+						<div>
+							<div class="product-name">IWC Schaffhaussen</div>
+							<div class="product-description">Automatic | Mens wrist watch</div>
+						</div>
+						<i class="fa fa-heart-o add-to-wishlist"></i>
+					</div>
+					<div class="flex justify-content-space-between align-items-center">				
+						<div class="product-price">Rs. 17000</div>
+						<button class="add-to-bag"><i class="fa fa-shopping-bag"></i>Add to cart</button>
+					</div>
+
+					<div class="discount">
+						<div class="badge"></div>
+						<div class="info flex flex-direction-column"><span>25% off</span><span>Rs 20000</span></div>
+					</div>
+				</div>		
+			</a>
+			<a class="product" href="product.html">
+				<img src="images/product/watch-2.png" alt="product image">
+				<div class="product-details">
+					<div class="flex align-items-center justify-content-space-between">
+						<div>
+							<div class="product-name">IWC Schaffhaussen</div>
+							<div class="product-description">Automatic | Mens wrist watch</div>
+						</div>
+						<i class="fa fa-heart-o add-to-wishlist"></i>
+					</div>
+					<div class="flex justify-content-space-between align-items-center">				
+						<div class="product-price">Rs. 17000</div>
+						<button class="add-to-bag"><i class="fa fa-shopping-bag"></i>Add to cart</button>
+					</div>
+
+					<div class="discount">
+						<div class="badge"></div>
+						<div class="info flex flex-direction-column"><span>25% off</span><span>Rs 20000</span></div>
+					</div>
+				</div>		
+			</a>
+			<a class="product" href="product.html">
+				<img src="images/product/watch-2.png" alt="product image">
+				<div class="product-details">
+					<div class="flex align-items-center justify-content-space-between">
+						<div>
+							<div class="product-name">IWC Schaffhaussen</div>
+							<div class="product-description">Automatic | Mens wrist watch</div>
+						</div>
+						<i class="fa fa-heart-o add-to-wishlist"></i>
+					</div>
+					<div class="flex justify-content-space-between align-items-center">				
+						<div class="product-price">Rs. 17000</div>
+						<button class="add-to-bag"><i class="fa fa-shopping-bag"></i>Add to cart</button>
+					</div>
+
+					<div class="discount">
+						<div class="badge"></div>
+						<div class="info flex flex-direction-column"><span>25% off</span><span>Rs 20000</span></div>
+					</div>
+				</div>		
+			</a>
+			<a class="product" href="product.html">
+				<img src="images/product/watch-2.png" alt="product image">
+				<div class="product-details">
+					<div class="flex align-items-center justify-content-space-between">
+						<div>
+							<div class="product-name">IWC Schaffhaussen</div>
+							<div class="product-description">Automatic | Mens wrist watch</div>
+						</div>
+						<i class="fa fa-heart-o add-to-wishlist"></i>
+					</div>
+					<div class="flex justify-content-space-between align-items-center">				
+						<div class="product-price">Rs. 17000</div>
+						<button class="add-to-bag"><i class="fa fa-shopping-bag"></i>Add to cart</button>
+					</div>
+
+					<div class="discount">
+						<div class="badge"></div>
+						<div class="info flex flex-direction-column"><span>25% off</span><span>Rs 20000</span></div>
+					</div>
+				</div>		
+			</a>
+
+
+		</div>
+
+		<div class="pagination">
+		  <a href="#" >&laquo;</a>
+		  <a href="#" class="active" target-page="1">1</a>
+		  <a href="#"  target-page="2">2</a>
+		  <a href="#"  target-page="3">3</a>
+		  <a href="#"  target-page="4">4</a>
+		  <a href="#"  target-page="5">5</a>
+		  <a href="#"  target-page="6">6</a>
+		  <a href="#"  target-page="7">&raquo;</a>
+		</div>
+
+	</div>	
+
+	<footer class="flex flex-direction-column justify-content-end">
+		<div class="top flex flex-wrap justify-content-space-between">
+			<div class="footer-links">
+				<h3>Important Links</h3>
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">About Us</a></li>
+					<li><a href="">Contact Us</a></li>
+					<li><a href="">Careers</a></li>
+					<li><a href="">Sell With Himali Baba</a></li>
+				</ul>			
+			</div>
+
+			<div class="footer-links">
+				<h3>Show Now</h3>
+				<ul>
+					<li><a href="">Deal Of The Day</a></li>
+					<li><a href="">Best Sellers</a></li>
+					<li><a href="">Big Save Us</a></li>
+					<li><a href="">All Products</a></li>
+				</ul>			
+			</div>
+			<div class="footer-links">
+				<h3>Important Categories</h3>
+				<ul>
+					<li><a href="">Men</a></li>
+					<li><a href="">Women</a></li>
+					<li><a href="">Electronics</a></li>
+					<li><a href="">Home Decor</a></li>
+				</ul>			
+			</div>
+			<div>
+				<div>
+					<h3>Connect through</h3>
+					<span><ion-icon name="logo-facebook"></ion-icon></span>
+					<span><ion-icon name="logo-instagram"></ion-icon></span>
+					<span><ion-icon name="logo-youtube"></ion-icon></span>
+				</div>
+				<div class="">
+					<h3>Payment Methods</h3>
+					<div class="flex payment-methods align-items-end">
+						<div class="flex flex-direction-column align-items-center">
+							<img src="images/footer/payment-esewa.jpg" alt="">
+							Esewa
+						</div>
+						<div class="flex flex-direction-column align-items-center">
+							<img src="images/footer/payment-khalti.png" alt="">
+							Khalti
+						</div>
+						<div class="flex flex-direction-column align-items-center">
+							<img src="images/footer/payment-connectIPS.png" alt="">
+							Connect IPS
+						</div>
+						<div class="flex flex-direction-column align-items-center">
+							<img src="images/footer/payment-cod.png" alt="">
+							Cash On Delivery
+						</div>
+
+					</div>
+				</div>
+
+			</div>		
+		</div>
+		<div class="bottom flex justify-content-space-between">
+			<span>
+				© 2021 Himali Baba. All rights reserved.
+			</span>
+			<span>
+				Developed By: Lightweb Group
+			</span>
+		</div>
+	</footer>	
+
+</div>
+
+<script src="https://kit.fontawesome.com/b5b791cd78.js"></script>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" ></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script>
+	
+	$('.mobile-menu').hide();
+
+	$('.hamburger').click(function(){
+		$('.mobile-menu').toggle();
+	})
+
+
+	$('#category-btn').click(function(){
+		$('.category-menu').toggle();
+	})
+
+
+	$('#category-btn.mobile').click(function(){
+		$('.category-menu.mobile').toggle();
+	})
+
+</script>
+
+</body>
+</html>

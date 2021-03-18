@@ -1,0 +1,148 @@
+.pdpNav{
+	font-size: 1.2rem;
+	margin: 20px 0;
+	padding: 16px;
+	border-top: 1px solid #e1e1e1;
+	background-color: #eee;
+	margin-bottom: 20px;
+}
+.pdpNav a{
+	color: #333;
+	text-decoration: none;
+}
+.pdpNav a:hover{
+	text-decoration: underline;
+	color: #111;
+}
+
+.checkout-wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 0;
+
+}
+.checkout-wrapper .left {
+	background-color: #f7f7f7;
+	margin: 0px 20px;
+}
+.checkout-wrapper .ui-tabs, .checkout-wrapper .ui-tabs-nav {
+	padding: 0;
+}
+
+.checkout-wrapper .ui-tabs .ui-tabs-panel {
+	padding: 20px;
+}
+
+.checkout-wrapper .left .next{
+	background-color: var(--primary);
+	color: #fff;
+	font-size: 16px;
+	padding: 8px 24px;
+	margin-top: 24px;
+
+}
+.block div {
+	margin: 5px;
+}
+.next a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.checkout-wrapper .right {
+	background-color: #f7f7f7;
+	font-size: 16px;
+	padding: 20px;
+	min-width: 320px;
+}
+
+.checkout-wrapper .right .meta {
+	margin: 16px auto;
+}
+.checkout-wrapper .right h3{
+	color: #555;
+}
+
+.checkout-wrapper .right input{
+	padding: 8px;
+}
+
+.checkout-wrapper .right button{
+    padding: 8px 16px;
+    margin: 0px 12px;
+	background-color: var(--primary);
+	color: #fff;
+
+}
+
+.checkout-wrapper .right .meta.total {
+	border-top: 2px dashed #555;
+	margin-top: 24px;
+	padding-top: 20px;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+#checkout-tabs {
+	font-size: 1.6rem;
+
+}
+#checkout-tabs li a{
+	color: #555;
+}
+#checkout-tabs .ui-tabs {
+	background-color: #fff;
+	outline: none;
+}
+
+
+#checkout-tabs .ui-tabs-active {
+	background-color: var(--primary);
+	color: #fff;
+}
+
+#checkout-tabs .ui-tabs-active a{
+	color: #fff;
+}
+.checkout-wrapper .orders .items{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.checkout-wrapper .orders img{
+	width: 200px;
+}
+.checkout-wrapper .orders .item {
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	padding: 12px;
+	margin-top: 12px;
+	margin-right: 12px;
+	box-shadow: 2px 2px 2px 2px #e7e7e7;
+    margin: 0px 20px 20px 0px;
+}
+.checkout-wrapper .orders .info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.checkout-wrapper .orders .info>span {
+	margin: 6px 0;
+}
+.ui-tabs .ui-tabs-panel {
+	padding: 1em 0;
+}
+.checkout-wrapper h3 {
+	color: #333;
+}
+.checkout-wrapper .address input {
+	padding: 8px 12px;	
+    width: 40%;
+    font-size: 14px;
+    margin: 8px;
+    border: 1px solid #999;
+    outline: none;
+}
+
+.address form {
+}

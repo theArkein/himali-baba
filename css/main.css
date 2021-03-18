@@ -158,11 +158,47 @@ nav .brand img{
 			color: #333;
 			padding-right: 1.2rem;
 		}
+		.menu .left {
+			position: relative;
+		}
 		.menu .left a{
 			font-size: 1.3em;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			cursor: pointer;
+		}
+		.category-menu {
+			position: absolute;
+			top: 35px;
+			background-color: #fff;
+			display: none;
+			font-size: 10px;
+			min-width: 1000px;
+			padding: 30px;
+			border: 1px solid #eee;
+			box-sizing: border-box;
+		}
+		.category-menu img{
+			width: 25px;
+			margin: 8px;
+		}
+
+		.category-menu .item{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			min-width: 200px;
+			margin-bottom: 12px;
+		}
+		.category-menu .item:hover {
+			color: var(--primary)
+		}
+		.category-menu .categories-gallery {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
 		}
 	}
 
@@ -180,8 +216,7 @@ nav .brand img{
 			width: 100%;
 			background-color: #fff;
 			max-height: 300px;
-			overflow-y: scroll;
-			display: none;
+			overflow-y: auto;
 		}
 		.mobile-menu input{
 			text-align: center;
@@ -201,9 +236,82 @@ nav .brand img{
 		.list:hover>.sublist{
 			height: 100%;
 		}
+		.category-menu {
+			font-size: 10px;
+			display: none;
+			box-sizing: border-box;
+		}
+		.category-menu img{
+			width: 16px;
+			margin: 8px;
+		}
+
+		.category-menu .item{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-width: 200px;
+			margin-bottom: 12px;
+		}
+		.category-menu .item:hover {
+			color: var(--primary)
+		}
+		.category-menu .categories-gallery {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
 	}
 
-/*=====================Navbar Styles End ======================*/
+/*====================   Navbar Styles End  ===================*/
+
+/*====================   Auth Form Start    =========================*/
+.auth-form {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 30px;
+	background-color: #fff;
+	box-shadow: 2px 2px 10px 2px #999;
+	display: none;
+	min-width: 700px;
+	max-height: 90vh;
+	overflow: auto;
+}
+
+.auth-form label {
+	font-size: 14px;
+}
+.auth-form input[type="text"]{
+	padding: 8px 16px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	margin: 8px 0px;
+}
+
+.auth-form .block{
+	margin: 8px;
+	display: flex;	
+	flex-direction: column;
+}
+
+.auth-form .form-btns input{
+	margin: 4px;
+	font-size: 16px;
+	padding: 5px 12px;
+	border: none;
+}
+
+.auth-form .form-btns input[type="submit"]{
+	background-color: var(--primary);
+	color: #fff;
+	border:  none;
+}
+
+
+/*====================   Auth Form  End     =========================*/
 
 
 /*=========================Page Content Start ======================*/

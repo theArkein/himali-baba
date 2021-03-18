@@ -33,7 +33,7 @@
 							<ion-icon name="bag-handle-outline"></ion-icon><span class="count">09</span>
 						</span>
 					</div>
-					<div class="details flex align-items-center">
+					<div class="details flex align-items-center hide-lg hide-sm">
 						<div class="image flex justify-content-center align-items-center"> D </div>
 						<div class="username">John Doe <ion-icon name="chevron-down-outline"></ion-icon></div>
 						<div class="user-menu">
@@ -41,16 +41,40 @@
 							<li><a href="">Logout</a></li>
 						</div>
 					</div>
-					<div class="auth-action flex align-items-center hide-lg hide-sm">
-						<a href="">Signin</a>
-						<a href="">Signup</a>
+					<div class="auth-action flex align-items-center ">
+						<a class="signin-toggle">Signin</a>
+						<a class="signup-toggle">Signup</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="menu hide-sm">
 			<div class="left">
-				<a href="Categories"><span>All Categories</span> <ion-icon name="chevron-down-outline"></ion-icon> </a>
+				<a id="category-btn"><span>All Categories</span> <ion-icon name="chevron-down-outline"></ion-icon> </a>
+				<div class="category-menu">
+					<div class="categories-gallery">
+						<a class="item">
+							<img src="images/categories/grocery.png" alt="">
+							<span>Kitchen & Groceries</span>
+						</a>
+						<a class="item">
+							<img src="images/categories/electronics.png" alt="">
+							<span>Electronics & Appliances</span>
+						</a>
+						<a class="item">
+							<img src="images/categories/fashion.png" alt="">
+							<span>Fashion & Beauty</span>
+						</a>
+						<a class="item">
+							<img src="images/categories/fashion.png" alt="">
+							<span>Fashion & Beauty</span>
+						</a>
+						<a class="item">
+							<img src="images/categories/grocery.png" alt="">
+							<span>Kitchen & Groceries</span>
+						</a>
+					</div>
+				</div>
 			</div>
 			<div class="right hide-sm">
 				<a href="">Deal of the day</a>
@@ -68,24 +92,86 @@
 				<a>My Wishlist</a>
 				<a>My Cart</a>
 				<a>My Profile</a>
-				<div class="list">
-					<a class="flex align-items-center">All Categories <ion-icon name="chevron-down-outline"></ion-icon></a>
-					<div class="sublist flex flex-direction-column align-items-center">
-						<a>My Wishlist</a>
-						<a>My Cart</a>
-						<a>My Profile</a>
-						<a>My Wishlist</a>
-						<a>My Cart</a>
-						<a>My Profile</a><a>My Wishlist</a>
-						<a>My Cart</a>
-						<a>My Profile</a><a>My Wishlist</a>
-						<a>My Cart</a>
-						<a>My Profile</a>
+				<a id="category-btn" class="mobile" onclick="$('category-menu.mobile').toggle()"><span>All Categories</span> <ion-icon name="chevron-down-outline"></ion-icon> </a>
+				<div class="mobile category-menu">
+					<div class="categories-gallery">
+						<a class="item">
+							<img src="images/categories/grocery.png" alt="">
+							<span>Kitchen & Groceries</span>
+						</a>
+						<a class="item">
+							<img src="images/categories/electronics.png" alt="">
+							<span>Electronics & Appliances</span>
+						</a>
+						<a class="item">
+							<img src="images/categories/fashion.png" alt="">
+							<span>Fashion & Beauty</span>
+						</a>
+						<a class="item">
+							<img src="images/categories/fashion.png" alt="">
+							<span>Fashion & Beauty</span>
+						</a>
+						<a class="item">
+							<img src="images/categories/grocery.png" alt="">
+							<span>Kitchen & Groceries</span>
+						</a>
 					</div>
 				</div>
 			
 			</div>
 		</div>
+
+		<div class="signin-wrapper auth-form">
+			<h3>Signin</h3>
+			<form action="">
+				<div class="block">
+					<label for="email">Email</label>
+					<input type="text" id="email" placeholder="johndoe@gmail.com">
+				</div>
+
+				<div class="block">
+					<label for="password">Password</label>
+					<input type="text" id="password" placeholder="johndoe@gmail.com">
+				</div>
+				<div class="form-btns">
+					<input class="signin-toggle" type="button" value="cancel"><input type="submit" value="Submit">
+				</div>
+			</form>
+		</div>	
+		<div class="signup-wrapper auth-form">
+			<h3>Signup</h3>
+			<form action="">
+				<div class="block">
+					<label for="first_name">First Name</label>
+					<input type="text" id="first_name" placeholder="John">
+				</div>
+				<div class="block">
+					<label for="last_name">Last Name</label>
+					<input type="text" id="last_name" placeholder="Doe">
+				</div>
+				<div class="block">
+					<label for="phone">Phone</label>
+					<input type="text" id="phone" placeholder="1234XXXXXX">
+				</div>
+				<div class="block">
+					<label for="email">Email</label>
+					<input type="text" id="email" placeholder="johndoe@gmail.com">
+				</div>
+
+				<div class="block">
+					<label for="password">Password</label>
+					<input type="text" id="password" placeholder="@SecXXXXXX">
+				</div>
+				<div class="block">
+					<label for="confirm_password">Password</label>
+					<input type="text" id="confirm_password" placeholder="@SecXXXXXX">
+				</div>
+				<div class="form-btns">
+					<input class="signup-toggle" type="button" value="cancel"><input type="submit" value="Submit">
+				</div>
+			</form>
+		</div>	
+
 	</nav>
 
 	<div class="page-content">
@@ -613,10 +699,32 @@
 		  ]
 		});
 	});
-		
+	
+	$('.mobile-menu').hide();
+
 	$('.hamburger').click(function(){
 		$('.mobile-menu').toggle();
 	})
+
+
+	$('#category-btn').click(function(){
+		$('.category-menu').toggle();
+	})
+
+
+	$('#category-btn.mobile').click(function(){
+		$('.category-menu.mobile').toggle();
+	})
+
+
+    $( ".signin-toggle" ).click( function() {
+      $(".signin-wrapper").toggle();
+    });
+
+    $( ".signup-toggle" ).click( function() {
+      $(".signup-wrapper").toggle();
+    });
+
 </script>
 </body>
 </html>
